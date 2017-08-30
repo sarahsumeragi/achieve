@@ -10,6 +10,7 @@ class BlogsController < ApplicationController
     # 実行するとSELECT * FROM blogs;
     @blogs = Blog.all
     # render :indexが実は書いてある
+    raise
   end
   
   def new
