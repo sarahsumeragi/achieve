@@ -12,11 +12,14 @@ Rails.application.routes.draw do
       post :confirm
     end
   end
-  
+
+  resources :poems, only: [:index]do
+  end
+
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
-  
+
   root 'top#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -74,4 +77,3 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 end
-

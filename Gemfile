@@ -57,6 +57,8 @@ gem 'cancan'
 gem 'pry-rails'
 gem 'better_errors'
 
+gem 'activeresource' 
+
 group :development do
   gem 'letter_opener_web'
 end
