@@ -13,7 +13,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :poems, only: [:index]do
+  resources:poems, only: [:index, :show]do
   end
 
   if Rails.env.development?
